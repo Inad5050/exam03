@@ -37,7 +37,7 @@ char	*get_next_line(int	fd)
 				break ;
 		}
 		line[i++] = buffer[buffer_index++];
-		if (line[i - 1] == '\n')
+		if (line[i - 1] == '\n') //añadir EOF?
 			break ;
 	}
 	line[i] = '\0';
